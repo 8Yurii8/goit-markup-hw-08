@@ -67,11 +67,11 @@ padding-bottom: 94px;} */
 
 /* .header{
 border-bottom: 1px solid #ECECEC;}
-
-.header__nav {
+*/
+.header__nav :not(:last-child) {
     display: flex;
-    align-items: center;}
-
+    align-items: center;} 
+/*  
 .nav__logo {
 display: flex;
 
