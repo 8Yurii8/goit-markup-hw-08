@@ -1,0 +1,121 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+
+}
+
+.nav__list .nav__item {
+    margin-left: 50px;
+}
+
+.nav__list .nav__item:first-child {
+    margin-left: 0px;
+}
+
+
+.logo {
+    margin-right: 93px;
+    font-family: var(--secondary-font-family);
+    color: #000000;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    text-decoration: none;
+    display: inline;
+}
+
+.logo__allocate {
+    color: var(--color-btm-logo);
+    font-family: var(--secondary-font-family);
+}
+
+.nav__link {
+    position: relative;
+    display: block;
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    text-decoration: none;
+    color: var(--main-padge-text-color);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    transition: color var(--animation-overlay);
+    
+    &:hover{
+            color: var(--color-btm-logo);
+        }
+
+    &:focus {
+        color: var(--color-btm-logo);
+        }
+}
+
+.in-line {
+    color: var(--active-color-btm);
+}
+
+
+
+.nav__link.in-line::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--color-btm-logo);
+}
+
+.contacs {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacs .nav__item {
+    margin-left: 30px;
+}
+
+.contacs .nav__item:first-child {
+    margin-left: 0px;
+}
+
+.contacs__phone {
+    margin: auto;
+    padding: auto;
+    height: 16px;
+    width: 10px;
+    fill: currentColor;
+}
+
+.contacs__mail {
+    fill: currentColor;
+    width: 16px;
+    height: 12px;
+}
+
+.contacs__link {
+    display: flex;
+    color: var(--secondary-padge-color);
+    font-weight: 500;
+    line-height: calc(16 / 14);
+    text-decoration: none;
+    font-style: normal;
+    align-items: center;
+    gap: 10px;
+    transition: color var(--animation-overlay);
+    
+&:hover { color: var(--color-btm-logo);}
+
+&:focus {color: var(--color-btm-logo);}
+    
+}

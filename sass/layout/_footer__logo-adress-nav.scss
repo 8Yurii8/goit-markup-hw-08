@@ -1,0 +1,43 @@
+.logo__allocate {
+    color: var(--color-btm-logo);
+    font-family: var(--secondary-font-family);}
+
+.adress-nav_adress {
+    color: var(--color-with);
+    line-height: calc(24 / 14);
+    text-decoration: none;
+    font-style: normal;
+}
+
+.footer__adress-nav-box {
+    min-width: 231px;
+}
+
+.footer__adress-nav .adress-nav__iteam {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    color: var(--color-with);
+    text-decoration: none;
+    margin-top: 9px;
+}
+
+.footer__adress-nav .adress-nav__iteam:first-child {
+    margin-top: 0px;
+}
+
+.adress-nav__support {
+    line-height: calc(24 / 14);
+    color: var(--footer-color-registr);
+    text-decoration: none;
+    font-style: normal;
+    transition: color var(--animation-overlay);
+    
+    &:hover {color: var(--color-btm-logo);}
+
+    &:focus {color: var(--color-btm-logo);}
+       
+}
+
