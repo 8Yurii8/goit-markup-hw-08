@@ -10,7 +10,12 @@
 }
 
 .footer__adress-nav-box {
-    min-width: 231px;
+   margin-bottom: 60px;
+    min-width: 232px;
+    @media screen and (min-width: 1200px){
+        min-width: 231px;
+        margin-bottom: 0px;}
+
 }
 
 .footer__adress-nav .adress-nav__iteam {

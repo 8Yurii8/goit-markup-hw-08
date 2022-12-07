@@ -1,11 +1,36 @@
 .filter-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    @media screen and (max-width: 767px) {
+        flex-wrap: wrap;
+        justify-content: left;
+        width: 320px;
+    }
+    
+    @media screen and (min-width: 768px) {
+    margin-bottom: 14px;
+    }
+
+    @media screen and (min-width: 1200px){
+    margin-bottom: 34px;}
+
+  
+
 }
 
 .filter-list__iteam {
     margin-left: 8px;
+
+&:nth-child(4n){
+@media screen and (max-width: 767px) {
+margin-left: 0px;
+}
+}
+
+&:first-child {
+    margin-left: 0px;
+    }
 }
 
 .filter-list__btn {
@@ -16,9 +41,7 @@
     border-color: inherit;
 }
 
-.filter-list__iteam:first-child {
-    margin-left: 0px;
-}
+
 
 .filter-list__btn {
     font-weight: 500;
@@ -43,4 +66,3 @@
                 0px 2px 2px rgba(0, 0, 0, 0.12);
         }
 }
-

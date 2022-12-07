@@ -1,6 +1,7 @@
 .footer__mailing-list {
+   @media screen and (min-width: 1200px){
     min-width: 570px;
-    margin-left: 93px;
+    margin-left: 93px;}
 }
 
 .mailing-list__text {
@@ -20,9 +21,15 @@
 }
 
 .mailing-list__btn {
-    display: inline-flex;
-    text-align: center;
-    justify-content: center;
+    display: block;
+    margin: auto;
+
+    @media screen and (min-width: 1200px) {
+            display: inline-flex;
+            text-align: center;
+            justify-content: center;
+        }
+        
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
@@ -37,6 +44,8 @@
     border-radius: 4px;
     transition: background-color var(--animation-overlay);
 
+
+
     &:hover {background-color: var(--active-color-btm);}
     &:focus {background-color: var(--active-color-btm);}
 }
@@ -50,15 +59,20 @@
 .mailing-list__mail {
     padding-left: 16px;
     padding-right: 16px;
-    width: 358px;
+    width: 450px;
     height: 50px;
     color: var(--color-with);
     background-color: var(--footer-back);
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
-    margin-right: 12px;
     border-radius: 4px;
     transition: border var(--animation-overlay);
+
+    @media screen and (max-width: 1199px){margin-bottom: 20px;}
+
+    @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;}
 
     &:focus {border: 1px solid var(--color-with);}
 }

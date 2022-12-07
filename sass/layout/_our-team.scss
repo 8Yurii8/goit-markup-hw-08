@@ -15,11 +15,7 @@
 }
 
 .our-team__cards {
-   
-    @media screen and (max-width: 767px) {
-            padding-bottom: 60px;
-        }
-
+  
     @media screen and (min-width: 768px) 
     {display: flex;
     flex-wrap: wrap;}

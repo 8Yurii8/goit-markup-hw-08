@@ -4,19 +4,58 @@
 }
 
 .portfolio-cards .item {
+    width: 450px;
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 30px;
+        width: 354px;
+    
+    }
+
+    @media screen and (min-width: 1200px) {
     width: 370px;
     margin-right: 30px;
-    margin-bottom: 30px;
+    }
+    
+        
+
     border: 1px solid #eeeeee;
+
+&:nth-child(2n) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 0px;
+    }
 }
 
-.portfolio-cards .item:nth-child(3n) {
-    margin-right: 0px;
+&:nth-child(9n) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-right: 0px;
+        margin-bottom: 0;
+    }
 }
 
-.portfolio-cards .item:nth-child(1n + 7) {
-    margin-bottom: 0px;
+
+
+ &:nth-child(3n) {
+    @media screen and (min-width: 1200px) {
+        margin-right: 0px;
+    }
 }
+
+&:nth-child(1n + 7) {
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0px;
+    }
+}
+
+
+
+}
+
+
+
+
 
 .cards-link {
     color: var(--main-padge-color);

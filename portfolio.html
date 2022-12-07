@@ -48,9 +48,17 @@
           </li>
         </ul>
       </div>
+      <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu__icon" wight="40" height="40">
+            <use href="./images/icons/icons.svg#icon-menu_40px"></use>
+          </svg>
     </header>
     <main>
-      <section class="section">
+      <section class="section portfolio">
         <div class="container">
         <h1 class="wigualy-hidden">Портфоліо</h1>
         <ul class="filter-list">
@@ -301,5 +309,36 @@
       </div>
       </div>
     </footer>
+     <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu__icon-close" wight="40" height="40" >
+          <use href="./images/icons/icons.svg#icon-close_40px"> </use>
+        </svg>
+        
+        
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item"><a href="./index.html" class="mobile-menu__link">Студія</a></li>
+        <li class="mobile-menu__item"><a href="./portfolio.html" class="mobile-menu__link in-line">Портфоліо</a></li>
+        <li class="mobile-menu__item"><a href="" class="mobile-menu__link">Контакти</a></li>
+      </ul>
+
+      <ul class="mobile-menu__contacts">
+        <li class="mobile-menu__contacts__item"><a href="tel:+380961111111" class="mobile-menu__contacs__phone">+38 096 111 11 11</a></li>
+        <li class="mobile-menu__contacts__item"><a href="mailto:info@devstudio.com" class="mobile-menu__contacs__mail">info@devstudio.com</a></li>
+      </ul>
+
+      <ul class="mobile-menu__social">
+        <li class="mobile-menu__social__list"><a href="" class="mobile-menu__social__link">Instagram</a></li>
+        <li class="mobile-menu__social-cane"></li>
+        <li class="mobile-menu__social__list"><a href="" class="mobile-menu__social__link">Twitter</a></li>
+        <li class="mobile-menu__social-cane"></li>
+        <li class="mobile-menu__social__list"><a href="" class="mobile-menu__social__link">Facebook</a></li>
+        <li class="mobile-menu__social-cane"></li>
+        <li class="mobile-menu__social__list"><a href="" class="mobile-menu__social__link">LinkedIn</a></li>
+      </ul>
+    </div> 
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
