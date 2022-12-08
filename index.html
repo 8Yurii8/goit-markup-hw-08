@@ -129,17 +129,23 @@
           <h2 class="wo-we-do__title">Чим ми займаємося</h2>
           <ul class="wo-we-do__title__cards">
             <li class="wo-we-do__cards__item">
-              <img src="./images/box1.jpg" width="370" alt="Дизайн" />
+              <img 
+              srcset="./images/studio/box1@1x.jpg 1x,./images/studio/box1@2x.jpg 2x"
+              width="370" alt="Дизайн" />
               <div class="wo-we-do__cards__thumb">
                 <p class="wo-we-do__cards__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="wo-we-do__cards__item">
-              <img src="./images/box2.jpg" width="370" alt="Додатки" />
+              <img 
+              srcset="./images/studio/box2@1x.jpg 1x,./images/studio/box2@2x.jpg 2x"
+              width="370" alt="Додатки" />
               <div class="wo-we-do__cards__thumb"><p class="wo-we-do__cards__text">Мобільні додатки</p></div>
             </li>
             <li class="wo-we-do__cards__item"> 
-              <img src="./images/box3.jpg" width="370" alt="3д графіка" />
+              <img 
+              srcset="./images/studio/box3@1x.jpg 1x,./images/studio/box3@2x.jpg 2x"
+              width="370" alt="3д графіка" />
               <div class="wo-we-do__cards__thumb"><p class="wo-we-do__cards__text">Дизайнерські рішення</p></div>
             </li>
           </ul>
@@ -150,11 +156,24 @@
           <h2 class="our-team__title">Наша команда</h2>
           <ul class="our-team__cards">
             <li class="our-team__iteam">
+              <picture>
+                <source media="(min-width: 1200px)" 
+                srcset="./images/studio/img1@1x.jpg 1x, ./images/studio/img1@2x.jpg 2x"/>
+
+                <source media="(min-width: 768px)" 
+                srcset="./images/table-studio/img1@1x.jpg 1x, ./images/table-studio/img1@2x.jpg 2x"/>
+
+                <source media="(max-width: 767px)" 
+                srcset="./images/mobile-studio/img1@1x.jpg 1x, ./images/mobile-studio/img1@2x.jpg 2x"/>
+
               <img
-                src="./images/img1.jpg"
-                width="270"
+                src="./images/mobile-studio/img1@1x"
                 alt="Фото Ігора Дем'яненка"
-              />
+                width="450"
+                height="460"
+                loading="lazy"/>
+              </picture>
+              
               <div class="team-name-div">
                 <h3 class="team-name">Ігор Дем'яненко</h3>
                 <p lang="en" class="team-profession">Product Designer</p>
@@ -187,11 +206,25 @@
               </div>
             </li>
             <li class="our-team__iteam">
-              <img
-                src="./images/img2.jpg"
-                width="270"
+              <picture>
+                <source media="(min-width: 1200px)" 
+                srcset="./images/studio/img2@1x.jpg 1x, ./images/studio/img2@2x.jpg 2x"/>
+
+                <source media="(min-width: 768px)" 
+                srcset="./images/table-studio/img2@1x.jpg 1x, ./images/table-studio/img2@2x.jpg 2x"/>
+
+                <source media="(max-width: 767px)" 
+                srcset="./images/mobile-studio/img2@1x.jpg 1x, ./images/mobile-studio/img2@2x.jpg 2x"/>
+
+                <img
+                src="./images/mobile-studio/img2@1x.jpg"
                 alt="Фото Ольги Рєпіной"
+                width="450"
+                height="460"
+                loading="lazy"
               />
+              </picture>
+              
               <div class="team-name-div">
                 <h3 class="team-name">Ольга Рєпіна</h3>
                 <p lang="en" class="team-profession">Frontend Developer</p>
@@ -228,11 +261,26 @@
               </div>
             </li>
             <li class="our-team__iteam">
-              <img
+              <picture>
+                <source media="(min-width: 1200px)" 
+                srcset="./images/studio/img3@1x.jpg 1x, ./images/studio/img3@2x.jpg 2x"/>
+
+                <source media="(min-width: 768px)" 
+                srcset="./images/table-studio/img3@1x.jpg 1x, ./images/table-studio/img3@2x.jpg 2x"/>
+
+                <source media="(max-width: 767px)" 
+                srcset="./images/mobile-studio/img3@1x.jpg 1x, ./images/mobile-studio/img3@2x.jpg 2x"/>
+
+                <img
                 src="./images/img3.jpg"
-                width="270"
                 alt="Фото Миколи Тарасова"
-              />
+                width="450"
+                height="460"
+                loading="lazy"
+                />
+              </picture>
+
+              
               <div class="team-name-div">
                 <h3 class="team-name">Микола Тарасов</h3>
                 <p lang="en" class="team-profession">Marketing</p>
@@ -271,11 +319,25 @@
               </div>
             </li>
             <li class="our-team__iteam">
-              <img
-                src="./images/img4.jpg"
-                width="270"
+              <picture>
+                <source media="(min-width: 1200px)" 
+                srcset="./images/studio/img4@1x.jpg 1x, ./images/studio/img4@2x.jpg 2x"/>
+
+                <source media="(min-width: 768px)" 
+                srcset="./images/table-studio/img4@1x.jpg 1x, ./images/table-studio/img4@2x.jpg 2x"/>
+
+                <source media="(max-width: 767px)" 
+                srcset="./images/mobile-studio/img4@1x.jpg 1x, ./images/mobile-studio/img4@2x.jpg 2x"/>
+
+                <img
+                src="./images/mobile-studio/img4@1x.jpg"
                 alt="Фото Михайла Єрмакова"
+                width="450"
+                height="460"
+                loading="lazy"
               />
+              </picture>
+
               <div class="team-name-div">
                 <h3 class="team-name">Михайло Єрмаков</h3>
                 <p lang="en" class="team-profession">UI Designer</p>
