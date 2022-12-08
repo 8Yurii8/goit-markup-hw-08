@@ -6,9 +6,14 @@
     padding:200px 0px ;
     text-align: center;
     background-color:var(--bg-img);
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/baground.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+    url(../images/baground.jpg);
+
     background-repeat: no-repeat;
     background-position: center;
+    @media (min-device-pixel-ratio: 2),(min-resolution: 192dpi), (min-resolution: 2dppx) {
+
+    }
     @media screen and (min-width: 1200px) {
             margin-bottom: 94px;
         }
