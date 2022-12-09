@@ -9,6 +9,11 @@
     min-width: calc(100% - 30px );
 
     background-color: var(--color-with);
+
+    @media screen and (min-width: 768px) {
+        min-width: 450px;
+    }
+
     @media screen and (min-width: 1200px) {
         min-width: 528px;
     }
