@@ -5,9 +5,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
     scale: 1;
-    min-width: 528px;
+    
+    min-width: calc(100% - 30px );
 
     background-color: var(--color-with);
+    @media screen and (min-width: 1200px) {
+        min-width: 528px;
+    }
+
 }
 
 .btm-modal {
@@ -33,11 +38,15 @@
 .modal-text {
     font-weight: 700;
     font-size: 20px;
-    line-height: calc(23 / 20);
+    line-height: calc(30 / 20);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-padge-text-color);
     margin-bottom: 12px;
+    
+    @media screen and (min-width: 1200px) {
+        line-height: calc(23 / 20);
+        }
 }
 
 .modal-svg {
@@ -120,10 +129,15 @@
 .modal-checkbox-text {
     position: relative;
     font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
     letter-spacing: 0.03em;
     color: var(--secondary-padge-color);
+
+    @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+        }
 }
 
 .modal-checkbox-link {

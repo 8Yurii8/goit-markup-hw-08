@@ -49,10 +49,15 @@ align-items: center;
     font-family: var(--secondary-font-family);
     color: #000000;
     font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
+    font-size: 24px;
+    line-height: calc(28 / 24);
     text-decoration: none;
     display: inline;
+
+    @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: calc(31 / 26);
+        }
 }
 
 .logo__allocate {
