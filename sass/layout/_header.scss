@@ -1,9 +1,9 @@
 .header {
     border-bottom: 1px solid #ECECEC;
-    padding-top: 16px;
-    padding-bottom: 16px;
     @media screen and (max-width: 767px){
-    display: flex;}
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 16px;}
    
 }
 .header__navigation {
@@ -29,7 +29,7 @@ align-items: center;
 
 }
 
-.nav__item {
+.nav__item, .contacs__item {
     @media screen and (max-width: 767px){
     display: none;}
 
@@ -106,18 +106,12 @@ color: var(--active-color-btm);
 
 .contacs {
     
-    
     margin-left: auto;
     @media screen and (min-width: 1200px){
     display: flex;
     }
 }
-
-.contacs .nav__item {
-    margin-left: 30px;
-}
-
-.contacs .nav__item:first-child {
+.contacs__item:first-child {
     margin-bottom: 10px;
     @media screen and (min-width: 1200px) {
         margin-left: 0;
@@ -125,7 +119,6 @@ color: var(--active-color-btm);
 }
 
 .contacs__phone {
-    // margin: auto;
     padding: auto;
     height: 16px;
     width: 10px;
