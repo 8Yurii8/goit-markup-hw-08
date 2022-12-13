@@ -29,7 +29,7 @@ align-items: center;
 
 }
 
-.nav__item, .contacs__item {
+.nav__item {
     @media screen and (max-width: 767px){
     display: none;}
 
@@ -37,6 +37,15 @@ align-items: center;
             margin-left: 50px;
         }
     
+}
+.contacs__item {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+            margin-left: 50px;
+        }
 }
 
 .nav__list .nav__item:first-child {
@@ -135,7 +144,8 @@ color: var(--active-color-btm);
     display: flex;
     color: var(--secondary-padge-color);
     font-weight: 500;
-    line-height: calc(16 / 14);
+    font-size: 12px;
+    line-height: calc(14 / 12);
     text-decoration: none;
     font-style: normal;
     align-items: center;
