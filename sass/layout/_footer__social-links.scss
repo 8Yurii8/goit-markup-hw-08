@@ -1,11 +1,13 @@
 .footer__social-links {
     min-width: 206px;
+    margin-bottom: 60px;
     @media screen and (min-width: 768px) {
      margin-left: 165px;
     }
 
     @media screen and (min-width: 1200px) {
-    margin-left: 70px;}
+    margin-left: 70px;
+    margin-bottom: 0px;}
 }
 
 .social-links__list {
@@ -14,10 +16,7 @@
     justify-content: center;
     margin-top: 16px;
     gap: 10px;
-    margin-bottom: 60px;
-    @media screen and (min-width: 1200px){
-        margin-bottom: 0px;
-    }
+   
 
 }
 

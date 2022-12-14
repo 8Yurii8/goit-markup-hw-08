@@ -264,6 +264,12 @@ img {
   -webkit-transition: color var(--animation-overlay);
   transition: color var(--animation-overlay);
 }
+@media screen and (min-width: 1200px) {
+  .contacs__link {
+    font-size: 14px;
+    line-height: 1.1428571429;
+  }
+}
 .contacs__link:hover {
   color: var(--color-btm-logo);
 }
@@ -793,7 +799,7 @@ img {
   margin-bottom: 30px;
 }
 .our-team__iteam:last-child {
-  margin-bottom: 60px;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 768px) {
   .our-team__iteam {
@@ -1092,6 +1098,7 @@ img {
 
 .footer__social-links {
   min-width: 206px;
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .footer__social-links {
@@ -1101,6 +1108,7 @@ img {
 @media screen and (min-width: 1200px) {
   .footer__social-links {
     margin-left: 70px;
+    margin-bottom: 0px;
   }
 }
 
@@ -1114,12 +1122,6 @@ img {
           justify-content: center;
   margin-top: 16px;
   gap: 10px;
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-  .social-links__list {
-    margin-bottom: 0px;
-  }
 }
 
 .social-links__link {
